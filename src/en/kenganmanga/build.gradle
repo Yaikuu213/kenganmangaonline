@@ -6,7 +6,6 @@ plugins {
 android {
     namespace 'eu.kanade.tachiyomi.extension.en.kenganmanga'
     compileSdk 34
-
     defaultConfig {
         applicationId 'eu.kanade.tachiyomi.extension.en.kenganmanga'
         minSdk 21
@@ -14,19 +13,11 @@ android {
         versionCode 7
         versionName "1.2.0"
     }
-
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
             java.srcDirs = ['src']
             res.srcDirs = ['res']
-        }
-    }
-    
-    buildTypes {
-        release {
-            minifyEnabled false
-            signingConfig signingConfigs.debug
         }
     }
 }
