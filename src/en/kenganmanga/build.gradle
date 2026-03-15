@@ -1,5 +1,7 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
 
 android {
     namespace 'eu.kanade.tachiyomi.extension.en.kenganmanga'
@@ -9,7 +11,7 @@ android {
         applicationId 'eu.kanade.tachiyomi.extension.en.kenganmanga'
         minSdk 21
         targetSdk 34
-        versionCode 6
+        versionCode 7
         versionName "1.2.0"
     }
 
