@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-    // On commente la lib pour l'instant pour débloquer le build
-    // implementation(project(':lib')) 
+    // On ne touche plus à la lib, on reste en mode solo
     compileOnly "org.tachiyomi:source-api:1.1"
 }
