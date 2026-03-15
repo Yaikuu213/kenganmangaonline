@@ -1,4 +1,0 @@
-dependencies {
-    implementation(project(':lib')) // Indispensable pour compiler
-    compileOnly "org.tachiyomi:source-api:1.1"
-}
