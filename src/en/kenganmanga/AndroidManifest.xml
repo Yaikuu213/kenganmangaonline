@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.microsoft.com/apk/res/android"
+    package="eu.kanade.tachiyomi.extension.en.kenganmanga">
+
+    <application
+        android:label="Kengan Manga Online"
+        android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="tachiyomi.extension.class"
+            android:value=".KenganManga" />
+    </application>
+</manifest>
