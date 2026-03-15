@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Main
         uses: actions/checkout@v4
         with:
-          ref: main # On récupère le code sur la branche main
+          ref: main 
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -25,9 +25,8 @@ jobs:
 
       - name: Build Extension
         run: |
-          chmod +x ./gradlew || true
-          # On lance la compilation
-          ./gradlew assembleRelease
+          # MODIF : On utilise 'gradle' directement au lieu de './gradlew'
+          gradle :src:en:kenganmanga:assembleRelease
 
       - name: Prepare Distribution Folder
         run: |
