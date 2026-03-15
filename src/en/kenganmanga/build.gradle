@@ -1,7 +1,5 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     namespace 'eu.kanade.tachiyomi.extension.en.kenganmanga'
@@ -11,7 +9,7 @@ android {
         applicationId 'eu.kanade.tachiyomi.extension.en.kenganmanga'
         minSdk 21
         targetSdk 34
-        versionCode 5
+        versionCode 6
         versionName "1.2.0"
     }
 
@@ -22,7 +20,7 @@ android {
             res.srcDirs = ['res']
         }
     }
-
+    
     buildTypes {
         release {
             minifyEnabled false
@@ -32,6 +30,5 @@ android {
 }
 
 dependencies {
-    // On ne touche plus à la lib, on reste en mode solo
     compileOnly "org.tachiyomi:source-api:1.1"
 }
